@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="./img/logotipoalura.png" alt="logo">
+            </div>
+        </nav>
+        <h1>Encriptador de Texto</h1>
+    </header>
+    <section class="content">
+        <div class="texto">
+            <textarea class="text-area" placeholder="Ingrese el texto aquí:" rows="8" cols="40" name="encriptador"></textarea>
+            <div class="content__advertencia">
+                <img src="./img/images.png" alt="advertencia" width="60">
+                <p>Ingrese texto sólo con minúsculas y sin acentos</p>
+            </div>
+            <div class="content__botones">
+                <button onclick="botonEncriptar()">Encriptar</button>
+                <button onclick="botonDesencriptar()">Desencriptar</button>
+                <button onclick="botonBorrar()">Borrar Texto</button>
+            </div>
+        </div>
+        <div class="salida">
+            <div class="content__salida">
+                <img src="./img/candado.png" alt="candado" class="candado">
+                <textarea class="mensaje" rows="8" placeholder="Ventana de salida"></textarea>
+                <div class="boton">
+                    <button onclick="copiarTexto()">Copiar Texto</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Desarrollado por Nelson Ayala 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
